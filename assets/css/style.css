@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Typography and base styles */
+
+
+body {
+    font-family: "IBM Plex Sans", serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "IBM Plex Sans", serif;
+    
+}
+
+/* code from previous template */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.gd-title {
+ background:  radial-gradient(212.13% 424.26% at 150% 100%, #39FA23 4%, #234EFA 96.24%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+object-fit:scale-down;
+
+
+}
+h3 {
+  line-height: 1.4; 
+}
+/* hover button */
+:root {
+  --primary-blue: #234EFB;
+  --black: #000000;
+}
+
+.hover-effect {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  cursor: pointer;
+  color: var(--primary-blue);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hover-effect::after {
+  content: '';
+  background: var(--primary-blue);
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  left: 0;
+  width: 0;
+  transition: all cubic-bezier(0.17, 0.54, 0.58, 1.1) 0.75s;
+}
+
+.hover-effect:hover::after {
+  width: 100%;
+  transition: all cubic-bezier(0.17, 0.54, 0.58, 1.1) 0.75s;
+}
+/* security cards */
+
+
+/* button hover flip */
+
+/* Custom Styles for Navigation */
+/* terms and service */
+
+    .nav-link {
+        @apply block pl-8 border-l border-transparent transition-all duration-300;
+    }
+
+    .nav-link.active {
+        @apply text-primary-blue border-primary-blue;
+    }
+       .text-primary-blue {
+       color: #234EFB; /* This should match your Tailwind color */
+   }
+
+   .border-primary-blue {
+       border-color: #234EFB; /* This should match your Tailwind color */
+   }
+   
+/* code from previous template */
+
